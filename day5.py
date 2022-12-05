@@ -33,8 +33,8 @@ def move_crates(amt: int, src: int, dest: int):
 
 with open("day5in.txt", 'r') as file:
     for line in file:
-        commands = [int(c) for c in line.rstrip().split() if c.isdigit()]
-        move_crates(commands[0], commands[1], commands[2])
+        amt, src, dest = [int(c) for c in line.rstrip().split() if c.isdigit()]
+        move_crates(amt, src, dest)
         
 
 topcrates = []
