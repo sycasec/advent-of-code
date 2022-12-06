@@ -1,1 +1,2 @@
-./*.txt
+# ignore input files
+*.txt
